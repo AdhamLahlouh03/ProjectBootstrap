@@ -1,8 +1,6 @@
 :root{
     --mainColor: #4d72d0;
     --mainColor2: #5bc198;
-    /* --mainFont: "Lato", sans-serif;
-    --subFont: "Josefin Sans", sans-serif; */
 }
 /* navbar */
 .nav-link{
@@ -555,46 +553,111 @@ textarea {
 }
 /* ------------------- */
 .blog-card {
-  border: 1px solid #ddd;
-  margin-bottom: 30px;
-  border-radius: 5px;
+  border-radius: 8px;
   overflow: hidden;
   background-color: #fff;
 }
 .date-box {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: #4CAF50;
-  color: white;
-  padding: 5px 10px;
-  font-weight: bold;
-  text-align: center;
+  top: 15px;
+  left: 15px;
+  background-color: #34b67a;
+  padding: 6px 10px;
+  border-radius: 5px;
+  width: 55px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.bg-light-green {
+  background-color: #34b67a !important;
 }
 .sidebar-box {
-  background-color: #f8f9fa;
-  border: 1px solid #ddd;
-  padding: 15px;
+  background-color: #f5f7fb;
+  padding: 20px;
+  border: 1px solid #eee;
+}
+.sidebar-title {
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  position: relative;
   margin-bottom: 20px;
 }
-.sidebar-box h5 {
-  margin-bottom: 15px;
+.sidebar-title::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: var(--mainColor); 
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
-.popular-posts img {
-  width: 50px;
-  height: 50px;
+.search-box {
+  border-radius: 8px;
+}
+.sidebar-box.popular-posts {
+  background-color: #f5f8fd;
+  border: 1px solid #eee;
+}
+.popular-posts h5 {
+  border-bottom: 2px solid var(--mainColor);
+  display: inline-block;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+.popular-posts .post-thumb {
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   border-radius: 5px;
-  margin-right: 10px;
+}
+.category-box h5 {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.category-underline {
+  height: 3px;
+  width: 30px;
+  bottom: -1px;
+}
+.category-box ul li span.badge {
+  font-size: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  min-width: 35px;
+  text-align: center;
 }
 .tag-btn {
-  margin: 5px 5px 0 0;
+  border-radius: 999px; 
+  padding: 6px 16px;
+  font-size: 14px;
+  transition: 0.2s ease-in-out;
+  border: 1px solid #ccc;
 }
-.ad-banner {
-  background-color: #2b4fb3;
+.tag-btn:hover {
+  background-color: var(--mainColor); 
+  color: #fff;
+  border-color: var(--mainColor);
+}
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: var(--mainColor) solid 2px;
+  font-size: 18px;
+}
+.social-icon:hover {
+  background-color: var(--mainColor); 
   color: white;
+}
+.ad-banner-custom {
+  position: relative;
   text-align: center;
-  padding: 20px;
+  color: white;
+  padding: 2rem;
+  background: url('./../img/blog/join-us.jpg') center center / cover no-repeat;
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 5px;
 }
 /* --------- */
@@ -639,4 +702,109 @@ textarea {
   height: 200px;
   bottom: -80px;
   right: -80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.description {
+  line-height: 1.8;
+}
+
+.quote-box {
+  background-color: #3b5bb2;
+  border: 1px solid #d9e2ff;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.post-section {
+  margin-bottom: 60px;
+}
+
+.tag-pill {
+  background-color: #f0f3f9;
+  color: #555;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f3f9;
+  color: #555;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: var(--mainColor);
+  color: white;
+}
+
+
+
+
+
+
+
+
+.author-img,
+.comment-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.social-icon {
+  background-color: #f0f3f9;
+  color: #555;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #3b5bb2;
+  color: #fff;
+}
+
+
+
+
+
+.leave-comment .form-control {
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.leave-comment .btn {
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
