@@ -18,14 +18,14 @@
 .btn.btn-outline-primary:hover{
   background-color: var(--mainColor);
   color: white; 
-  border-color: #6c9eff;
+  border-color: var(--mainColor);
 } 
 .btn.btn-primary{
   background-color: var(--mainColor);
 }
 /* headre */
-.header{
-    background-image:url(./../img/public/banner-bg.jpg);
+.header {
+    background-image: url(./../img/public/banner-bg.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -45,53 +45,22 @@
 .circle-1 {
     width: 600px;
     height: 600px;
-    animation-delay: 0.2s;
 }
 .circle-2 {
     width: 450px;
     height: 450px;
     top: 75px;
     left: 75px;
-    animation-delay: 0.6s;
 }
 @keyframes scaleFadeIn {
-to {
-    transform: scale(1);
-    opacity: 1;
-}
-}
-.animate-circle {
-    animation: scaleFadeIn 1s ease-out forwards;
-}
-@keyframes doctorFadeIn {
-to {
-    transform: scale(1);
-    opacity: 1;
-}
-}
-.animate-doctor {
-    animation: doctorFadeIn 1s ease-out forwards;
-    animation-delay: 1.3s;
-}
-@keyframes scaleFadeIn {
-0% {
-    transform: scale(0.4);
-    opacity: 0;
-}
-100% {
-    transform: scale(1);
-    opacity: 1;
-}
-}
-@keyframes doctorFadeIn {
-0% {
-    transform: scale(0.6);
-    opacity: 0;
-}
-100% {
-    transform: scale(1);
-    opacity: 1;
-}
+    0% {
+        transform: scale(0.4);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .animate-circle {
     animation: scaleFadeIn 1s ease-out forwards;
@@ -102,28 +71,38 @@ to {
 .circle-2.animate-circle {
     animation-delay: 0.8s;
 }
+@keyframes doctorFadeIn {
+    0% {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 .doctor-img.animate-doctor {
     animation: doctorFadeIn 1s ease-out forwards;
     animation-delay: 1.5s;
-    opacity: 0; 
+    opacity: 0;
 }
-.title{
-  margin-top: 15%;
+.title {
+    margin-top: 15%;
 }
-.bg_background{
-  background-color: var(--mainColor);
+.bg_background {
+    background-color: var(--mainColor);
 }
-.input-group .form-control::placeholder{
-  color: gray;
+.input-group .form-control::placeholder {
+    color: gray;
 }
-.input-group .form-select{
-  color: gray;
+.input-group .form-select {
+    color: gray;
 }
 .booking-form-container {
     z-index: 10;
 }
-.btn-success:hover{
-  background-color: var(--mainColor2);
+.btn-success:hover {
+    background-color: var(--mainColor2);
 }
 /* section 1 after header */
 .three-service{
@@ -158,8 +137,7 @@ to {
   color: #909090;
 }
 .custom-width{
-    width: 86%;
-    margin-left: 86px;
+    width: 80%;
 }
 /* section 3 */
 .service-cards {
@@ -168,9 +146,14 @@ to {
   padding: 2rem;
   background-color: #f4f6fa;
 }
+.Overlay-Icon{
+  margin-left: -140px;
+  margin-top: 25px;
+  width: 80;
+}
 .carousel-item{
-    width: 80%;
-    margin-left: 60px;
+    max-width: 1100px;
+    margin-left: 90px
 }
 .bg-service-green {
   background-color: #e6f4f1;
@@ -207,7 +190,7 @@ to {
   margin-top: 100px;
 }
 .bg-why {
-  background-color: #5bc198;
+  background-color: var(--mainColor2);
   background-image: url('./../img/blog/why-choose-bg-left.png');
   background-size: cover;
   background-position: center;
@@ -242,14 +225,11 @@ to {
   z-index: 10;
 }
 .play-button:hover {
-  background-color: #2e54dc;
+  background-color: var(--mainColor);
   text-decoration: none;
 }
 .bg-play-button{
   background-color: var(--mainColor);
-}
-.subscribe-box input {
-  height: 48px;
 }
 .subscribe-box input::placeholder {
   color: gray;
@@ -261,6 +241,9 @@ to {
 /* section 6 */
 .text-team{
   color: var(--mainColor);
+}
+.team-doctor{
+  max-width: 80%;
 }
 .doctor-card {
   background-color: #f5f1eb; 
@@ -292,9 +275,6 @@ to {
   min-height: 500px;
   position: relative;
   z-index: 1;
-}
-.healthier-section::before {
-  display: none;
 }
 .healthier-section .container {
   position: relative;
@@ -359,7 +339,7 @@ to {
   opacity: 1;
 }
 .blog-item:hover {
-  background-color: #4d73e8;
+  background-color: var(--mainColor);
 }
 .blog-item * {
   position: relative;
@@ -369,7 +349,7 @@ to {
 .blog-item:hover .blog-title,
 .blog-item:hover .meta-text,
 .blog-item:hover .stat-text {
-  color: white !important;
+  color: white;
 }
 .blog-item:hover .read-btn {
   background-color: #1c1c1c;
@@ -432,13 +412,15 @@ to {
   background-position: center;
   min-height: 300px;
 }
-
 .border-line {
   width: 40px;
   height: 2px;
   background-color: white;
 }
-/* ------------------------------- */
+.our-service{
+  max-width: 1120px;
+}
+/* section 2 */
 .service-card {
   background-image: url('./../img/services_section/service-box-bg.png');
   background-repeat: no-repeat;
@@ -465,7 +447,7 @@ to {
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-/* ---------------------------------- */
+/* section 3 */
 .bg-blue {
   background-color: var(--mainColor);
   background-image: url('./../img/public/sub-header-bg.png'); 
@@ -480,7 +462,7 @@ to {
 textarea {
   border-color: rgba(255, 255, 255, 0.5);
 }
-/* ------------------------------ */
+/* section 4 */
 .price__doctors{
   max-width: 150vh;
 }
@@ -490,23 +472,32 @@ textarea {
 .border-end {
   border-right: 1px solid #ddd;
 }
-/* ------------------------------- */
+/* section 5 */
 .team__description {
   background-image: url("./../img/public/testi-bg.png");
   background-size: contain;
+  
 }
-
+.size-section{
+  max-width: 140px;
+}
 .name__doctor{
   color: var(--mainColor);
 }
-/* -------------------------------- */
+/* section 6 */
 .btn__book{
   background-color: var(--mainColor2);
 }
 .btn__book:hover{
   background-color: var(--mainColor2);
 }
-/* ---------------------------------- */
+/* Page Doctors */
+/* section 1 */
+.team-img{
+  width: 75%;
+  height: 75%;
+}
+/* section 2 */
 .emergency-section {
   background-image: url("./../img/public/bg-img-doctors.jpg"); 
   background-size: cover;
@@ -528,7 +519,8 @@ textarea {
   align-items: center;
   border-radius: 6px;
 }
-/* ------------------------ */
+/* Page Price */
+/* section 2 */
 .satisfaction-section {
   min-height: 100vh;
   overflow: hidden;
@@ -551,116 +543,8 @@ textarea {
   top: 15%;
   left: 15%;
 }
-/* ------------------- */
-.blog-card {
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #fff;
-}
-.date-box {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  background-color: #34b67a;
-  padding: 6px 10px;
-  border-radius: 5px;
-  width: 55px;
-  font-size: 14px;
-  line-height: 1.2;
-}
-.bg-light-green {
-  background-color: #34b67a !important;
-}
-.sidebar-box {
-  background-color: #f5f7fb;
-  padding: 20px;
-  border: 1px solid #eee;
-}
-.sidebar-title {
-  font-weight: bold;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
-  position: relative;
-  margin-bottom: 20px;
-}
-.sidebar-title::after {
-  content: "";
-  width: 40px;
-  height: 2px;
-  background-color: var(--mainColor); 
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.search-box {
-  border-radius: 8px;
-}
-.sidebar-box.popular-posts {
-  background-color: #f5f8fd;
-  border: 1px solid #eee;
-}
-.popular-posts h5 {
-  border-bottom: 2px solid var(--mainColor);
-  display: inline-block;
-  padding-bottom: 5px;
-  font-weight: bold;
-}
-.popular-posts .post-thumb {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-.category-box h5 {
-  position: relative;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-.category-underline {
-  height: 3px;
-  width: 30px;
-  bottom: -1px;
-}
-.category-box ul li span.badge {
-  font-size: 14px;
-  border-radius: 50%;
-  display: inline-block;
-  min-width: 35px;
-  text-align: center;
-}
-.tag-btn {
-  border-radius: 999px; 
-  padding: 6px 16px;
-  font-size: 14px;
-  transition: 0.2s ease-in-out;
-  border: 1px solid #ccc;
-}
-.tag-btn:hover {
-  background-color: var(--mainColor); 
-  color: #fff;
-  border-color: var(--mainColor);
-}
-.social-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: var(--mainColor) solid 2px;
-  font-size: 18px;
-}
-.social-icon:hover {
-  background-color: var(--mainColor); 
-  color: white;
-}
-.ad-banner-custom {
-  position: relative;
-  text-align: center;
-  color: white;
-  padding: 2rem;
-  background: url('./../img/blog/join-us.jpg') center center / cover no-repeat;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 5px;
-}
-/* --------- */
+/* Page About */
+/* section 3 */
 .border-box {
   border-left: 4px dotted var(--mainColor2);
   padding-left: 1rem;
@@ -706,105 +590,7 @@ textarea {
 
 
 
-
-
-
-
-
-
-
-
-
-.description {
-  line-height: 1.8;
+.custom-width-our-mission{
+  max-width: 85%;
 }
 
-.quote-box {
-  background-color: #3b5bb2;
-  border: 1px solid #d9e2ff;
-  position: relative;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.post-section {
-  margin-bottom: 60px;
-}
-
-.tag-pill {
-  background-color: #f0f3f9;
-  color: #555;
-  padding: 5px 14px;
-  border-radius: 20px;
-  font-size: 14px;
-}
-
-.social-icon {
-  width: 35px;
-  height: 35px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f3f9;
-  color: #555;
-  border-radius: 50%;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.social-icon:hover {
-  background-color: var(--mainColor);
-  color: white;
-}
-
-
-
-
-
-
-
-
-.author-img,
-.comment-img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-
-.social-icon {
-  background-color: #f0f3f9;
-  color: #555;
-  padding: 8px;
-  border-radius: 50%;
-  transition: background 0.3s ease;
-}
-
-.social-icon:hover {
-  background-color: #3b5bb2;
-  color: #fff;
-}
-
-
-
-
-
-.leave-comment .form-control {
-  border-radius: 5px;
-  box-shadow: none;
-}
-
-.leave-comment .btn {
-  font-weight: 600;
-  font-size: 14px;
-  border-radius: 5px;
-  text-transform: uppercase;
-}

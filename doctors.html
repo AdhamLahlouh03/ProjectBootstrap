@@ -10,6 +10,10 @@
     <!-- font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+
     <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
     <body>
@@ -17,25 +21,25 @@
         <header class="top-header py-2 border-bottom mt-4">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center gap-2">
-            <img src="assets/img/logo/logo.png" alt="Logo" style="height:40px">
+            <img src="assets/img/logo/logo.png" alt="Logo" >
             </div>
             <div class="d-flex align-items-center gap-4">
             <div class="d-flex align-items-center gap-2 border-end pe-3">
-                <img src="assets/img/icons/mail-icon.png" width="30"/>
+                <img src="assets/img/icons/mail-icon.png" alt="email icon"/>
                 <div class="text-start">
                 <small class="text-muted">Mail us</small>
                 <div class="fw-semibold">info@medenin</div>
                 </div>
             </div>
             <div class="d-flex align-items-center gap-2 border-end pe-3">
-                <img src="assets/img/icons/call-icon.png" width="30"/>
+                <img src="assets/img/icons/call-icon.png" alt="call icon"/>
                 <div class="text-start">
                 <small class="text-muted">Toll Free</small>
                 <div class="fw-bold">+123 456 7890</div>
                 </div>
             </div>
             <button class="btn btn-primary rounded-pill px-4 shadow-sm">Make Appointment</button>
-            <button class="btn btn-success rounded-circle shadow-sm d-flex align-items-center justify-content-center" style="width:40px;height:40px">
+            <button class="icon-search btn btn-success rounded-circle shadow-sm d-flex align-items-center justify-content-center" >
                 <i class="fa fa-search text-white"></i>
             </button>
             </div>
@@ -50,32 +54,37 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
             <ul class="navbar-nav gap-3">
                 <li class="nav-item dropdown">
-                <a class="nav-link " href="#" data-bs-toggle="dropdown">Home</a>
+                <a class="nav-link " href="./index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Department</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Cardiology</a></li>
+                    <li><a class="dropdown-item" href="./cardiology.html">Cardiology</a></li>
                 </ul>
                 </li>
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Patients</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Service</a></li>
-                    <li><a class="dropdown-item" href="#">Our Doctors</a></li>
-                    <li><a class="dropdown-item" href="#">Pricing</a></li>
+                    <li><a class="dropdown-item" href="./services.html">Service</a></li>
+                    <li><a class="dropdown-item" href="./doctors.html">Our Doctors</a></li>
+                    <li><a class="dropdown-item" href="./price.html">Pricing</a></li>
                 </ul>
                 </li>
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Blog List</a></li>
-                    <li><a class="dropdown-item" href="#">Blog Grid</a></li>
-                    <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                    <li><a class="dropdown-item" href="./blog_grid.html">Blog Grid</a></li>
                 </ul>
                 </li>
                 <li class="nav-item dropdown">
-                <a class="nav-link" href="#" data-bs-toggle="dropdown">About</a>
+                <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Register</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./signIn.html">SignIn</a></li>
+                    <li><a class="dropdown-item" href="./signUp.html">SignUp</a></li>
+                </ul>
                 </li>
             </ul>
 
@@ -94,7 +103,7 @@
                 </li>
                 <li class="nav-item position-relative">
                 <a class="nav-link" href="#">
-                    <img src="assets/img/icons/cart.svg" width="20">
+                    <img src="assets/img/icons/cart.svg" width="20" height="20" alt="cart icon">
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">2</span>
                 </a>
                 </li>
@@ -125,20 +134,21 @@
             </div>
         </section>
 
-        <section class="team-section py-5 text-center"> 
+        <section class="team-section py-5 text-center" data-aos="fade-up"> 
             <div class="container">
+                <div class="custom-width ms-auto me-auto">
                 <p class="text-primary fw-bold">---- Our Team ----</p>
                 <h2 class="fw-bold mb-5">Our Dedicated Doctors</h2>
 
-                <div class="row g-4 justify-content-center">
+                <div class="row g-4">
 
-                <div class="col-md-3">
-                    <div class="card border-0 shadow team-card p-3">
-                    <img src="assets/img/doctors/team1.jpg" class="rounded-circle mx-auto team-img mb-3" alt="Dr. Mary Joe">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="border-0 shadow p-3" >
+                    <img src="assets/img/doctors/team1.jpg" class="rounded-circle mx-auto team-img mb-4 mt-2" alt="Dr. Mary Joe">
                     <h5 class="fw-bold">Dr. Mary Joe</h5>
                     <p class="text-muted small">SURGEON</p>
-                    <a href="#" class="btn btn__book text-white w-50 mb-3">VIEW MORE</a>
-                    <div class="d-flex justify-content-center gap-3 fs-5 text-muted">
+                    <a href="#" class="btn btn__book text-white w-75 mb-3 ms-auto me-auto">VIEW MORE</a>
+                    <div class="d-flex justify-content-center gap-4 fs-6 text-muted">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-linkedin-in"></i>
@@ -147,58 +157,13 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card border-0 shadow team-card p-3">
-                    <img src="assets/img/doctors/team2.jpg" class="rounded-circle mx-auto team-img mb-3" alt="Dr. Thomas Jack">
-                    <h5 class="fw-bold">Dr. Thomas Jack</h5>
-                    <p class="text-muted small">ORTHODONTIST</p>
-                    <a href="#" class="btn btn__book text-white w-50  mb-3">VIEW MORE</a>
-                    <div class="d-flex justify-content-center gap-3 fs-5 text-muted">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                        <i class="fab fa-google-plus-g"></i>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card border-0 shadow team-card p-3">
-                    <img src="assets/img/doctors/team3.jpg" class="rounded-circle mx-auto team-img mb-3" alt="Dr. Jhone Issak">
-                    <h5 class="fw-bold">Dr. Jhone Issak</h5>
-                    <p class="text-muted small">DENTAL ASSISTANT</p>
-                    <a href="#" class="btn btn__book text-white w-50 mb-3">VIEW MORE</a>
-                    <div class="d-flex justify-content-center gap-3 fs-5 text-muted">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                        <i class="fab fa-google-plus-g"></i>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card border-0 shadow team-card p-3">
-                    <img src="assets/img/doctors/team4.jpg" class="rounded-circle mx-auto team-img mb-3" alt="Dr. Hessy Hanna">
-                    <h5 class="fw-bold">Dr. Hessy Hanna</h5>
-                    <p class="text-muted small">DENTIST</p>
-                    <a href="#" class="btn btn__book text-white w-50 mb-3">VIEW MORE</a>
-                    <div class="d-flex justify-content-center gap-3 fs-5 text-muted">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                        <i class="fab fa-google-plus-g"></i>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card border-0 shadow team-card p-3">
-                    <img src="assets/img/doctors/team5.jpg" class="rounded-circle mx-auto team-img mb-3" alt="Dr. Mary Joe">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="border-0 shadow p-3" >
+                    <img src="assets/img/doctors/team2.jpg" class="rounded-circle mx-auto team-img mb-4 mt-2" alt="Dr. Mary Joe">
                     <h5 class="fw-bold">Dr. Mary Joe</h5>
                     <p class="text-muted small">SURGEON</p>
-                    <a href="#" class="btn btn__book text-white w-50 mb-3">VIEW MORE</a>
-                    <div class="d-flex justify-content-center gap-3 fs-5 text-muted">
+                    <a href="#" class="btn btn__book text-white w-75 mb-3 ms-auto me-auto">VIEW MORE</a>
+                    <div class="d-flex justify-content-center gap-4 fs-6 text-muted">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-linkedin-in"></i>
@@ -207,58 +172,13 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card border-0 shadow team-card p-3">
-                    <img src="assets/img/doctors/team6.jpg" class="rounded-circle mx-auto team-img mb-3" alt="Dr. Thomas Jack">
-                    <h5 class="fw-bold">Dr. Thomas Jack</h5>
-                    <p class="text-muted small">ORTHODONTIST</p>
-                    <a href="#" class="btn btn__book text-white w-50 mb-3">VIEW MORE</a>
-                    <div class="d-flex justify-content-center gap-3 fs-5 text-muted">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                        <i class="fab fa-google-plus-g"></i>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card border-0 shadow team-card p-3">
-                    <img src="assets/img/doctors/team7.jpg" class="rounded-circle mx-auto team-img mb-3" alt="Dr. Jhone Issak">
-                    <h5 class="fw-bold">Dr. Jhone Issak</h5>
-                    <p class="text-muted small">DENTAL ASSISTANT</p>
-                    <a href="#" class="btn btn__book text-white w-50 mb-3">VIEW MORE</a>
-                    <div class="d-flex justify-content-center gap-3 fs-5 text-muted">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                        <i class="fab fa-google-plus-g"></i>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card border-0 shadow team-card p-3">
-                    <img src="assets/img/doctors/team8.jpg" class="rounded-circle mx-auto team-img mb-3" alt="Dr. Hessy Hanna">
-                    <h5 class="fw-bold">Dr. Hessy Hanna</h5>
-                    <p class="text-muted small">DENTIST</p>
-                    <a href="#" class="btn btn__book text-white w-50 mb-3">VIEW MORE</a>
-                    <div class="d-flex justify-content-center gap-3 fs-5 text-muted">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                        <i class="fab fa-google-plus-g"></i>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card border-0 shadow team-card p-3">
-                    <img src="assets/img/doctors/team9.jpg" class="rounded-circle mx-auto team-img mb-3" alt="Dr. Mary Joe">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="border-0 shadow p-3" >
+                    <img src="assets/img/doctors/team3.jpg" class="rounded-circle mx-auto team-img mb-4 mt-2" alt="Dr. Mary Joe">
                     <h5 class="fw-bold">Dr. Mary Joe</h5>
                     <p class="text-muted small">SURGEON</p>
-                    <a href="#" class="btn btn__book text-white w-50 mb-3">VIEW MORE</a>
-                    <div class="d-flex justify-content-center gap-3 fs-5 text-muted">
+                    <a href="#" class="btn btn__book text-white w-75 mb-3 ms-auto me-auto">VIEW MORE</a>
+                    <div class="d-flex justify-content-center gap-4 fs-6 text-muted">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-linkedin-in"></i>
@@ -267,13 +187,13 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card border-0 shadow team-card p-3">
-                    <img src="assets/img/doctors/team10.jpg" class="rounded-circle mx-auto team-img mb-3" alt="Dr. Thomas Jack">
-                    <h5 class="fw-bold">Dr. Thomas Jack</h5>
-                    <p class="text-muted small">ORTHODONTIST</p>
-                    <a href="#" class="btn btn__book text-white w-50 mb-3">VIEW MORE</a>
-                    <div class="d-flex justify-content-center gap-3 fs-5 text-muted">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="border-0 shadow p-3" >
+                    <img src="assets/img/doctors/team4.jpg" class="rounded-circle mx-auto team-img mb-4 mt-2" alt="Dr. Mary Joe">
+                    <h5 class="fw-bold">Dr. Mary Joe</h5>
+                    <p class="text-muted small">SURGEON</p>
+                    <a href="#" class="btn btn__book text-white w-75 mb-3 ms-auto me-auto">VIEW MORE</a>
+                    <div class="d-flex justify-content-center gap-4 fs-6 text-muted">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-linkedin-in"></i>
@@ -282,13 +202,13 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card border-0 shadow team-card p-3">
-                    <img src="assets/img/doctors/team11.jpg" class="rounded-circle mx-auto team-img mb-3" alt="Dr. Jhone Issak">
-                    <h5 class="fw-bold">Dr. Jhone Issak</h5>
-                    <p class="text-muted small">DENTAL ASSISTANT</p>
-                    <a href="#" class="btn btn__book text-white w-50 mb-3">VIEW MORE</a>
-                    <div class="d-flex justify-content-center gap-3 fs-5 text-muted">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="500">
+                    <div class="border-0 shadow p-3" >
+                    <img src="assets/img/doctors/team5.jpg" class="rounded-circle mx-auto team-img mb-4 mt-2" alt="Dr. Mary Joe">
+                    <h5 class="fw-bold">Dr. Mary Joe</h5>
+                    <p class="text-muted small">SURGEON</p>
+                    <a href="#" class="btn btn__book text-white w-75 mb-3 ms-auto me-auto">VIEW MORE</a>
+                    <div class="d-flex justify-content-center gap-4 fs-6 text-muted">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-linkedin-in"></i>
@@ -297,13 +217,13 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card border-0 shadow team-card p-3">
-                    <img src="assets/img/doctors/team1.jpg" class="rounded-circle mx-auto team-img mb-3" alt="Dr. Hessy Hanna">
-                    <h5 class="fw-bold">Dr. Hessy Hanna</h5>
-                    <p class="text-muted small">DENTIST</p>
-                    <a href="#" class="btn btn__book text-white w-50 mb-3">VIEW MORE</a>
-                    <div class="d-flex justify-content-center gap-3 fs-5 text-muted">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
+                    <div class="border-0 shadow p-3" >
+                    <img src="assets/img/doctors/team6.jpg" class="rounded-circle mx-auto team-img mb-4 mt-2" alt="Dr. Mary Joe">
+                    <h5 class="fw-bold">Dr. Mary Joe</h5>
+                    <p class="text-muted small">SURGEON</p>
+                    <a href="#" class="btn btn__book text-white w-75 mb-3 ms-auto me-auto">VIEW MORE</a>
+                    <div class="d-flex justify-content-center gap-4 fs-6 text-muted">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-linkedin-in"></i>
@@ -312,11 +232,101 @@
                     </div>
                 </div>
 
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="700">
+                    <div class="border-0 shadow p-3" >
+                    <img src="assets/img/doctors/team7.jpg" class="rounded-circle mx-auto team-img mb-4 mt-2" alt="Dr. Mary Joe">
+                    <h5 class="fw-bold">Dr. Mary Joe</h5>
+                    <p class="text-muted small">SURGEON</p>
+                    <a href="#" class="btn btn__book text-white w-75 mb-3 ms-auto me-auto">VIEW MORE</a>
+                    <div class="d-flex justify-content-center gap-4 fs-6 text-muted">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="800">
+                    <div class="border-0 shadow p-3" >
+                    <img src="assets/img/doctors/team8.jpg" class="rounded-circle mx-auto team-img mb-4 mt-2" alt="Dr. Mary Joe">
+                    <h5 class="fw-bold">Dr. Mary Joe</h5>
+                    <p class="text-muted small">SURGEON</p>
+                    <a href="#" class="btn btn__book text-white w-75 mb-3 ms-auto me-auto">VIEW MORE</a>
+                    <div class="d-flex justify-content-center gap-4 fs-6 text-muted">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="900">
+                    <div class="border-0 shadow p-3" >
+                    <img src="assets/img/doctors/team9.jpg" class="rounded-circle mx-auto team-img mb-4 mt-2" alt="Dr. Mary Joe">
+                    <h5 class="fw-bold">Dr. Mary Joe</h5>
+                    <p class="text-muted small">SURGEON</p>
+                    <a href="#" class="btn btn__book text-white w-75 mb-3 ms-auto me-auto">VIEW MORE</a>
+                    <div class="d-flex justify-content-center gap-4 fs-6 text-muted">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="border-0 shadow p-3" >
+                    <img src="assets/img/doctors/team10.jpg" class="rounded-circle mx-auto team-img mb-4 mt-2" alt="Dr. Mary Joe">
+                    <h5 class="fw-bold">Dr. Mary Joe</h5>
+                    <p class="text-muted small">SURGEON</p>
+                    <a href="#" class="btn btn__book text-white w-75 mb-3 ms-auto me-auto">VIEW MORE</a>
+                    <div class="d-flex justify-content-center gap-4 fs-6 text-muted">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="1100">
+                    <div class="border-0 shadow p-3" >
+                    <img src="assets/img/doctors/team11.jpg" class="rounded-circle mx-auto team-img mb-4 mt-2" alt="Dr. Mary Joe">
+                    <h5 class="fw-bold">Dr. Mary Joe</h5>
+                    <p class="text-muted small">SURGEON</p>
+                    <a href="#" class="btn btn__book text-white w-75 mb-3 ms-auto me-auto">VIEW MORE</a>
+                    <div class="d-flex justify-content-center gap-4 fs-6 text-muted">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="1200">
+                    <div class="border-0 shadow p-3" >
+                    <img src="assets/img/doctors/team1.jpg" class="rounded-circle mx-auto team-img mb-4 mt-2" alt="Dr. Mary Joe">
+                    <h5 class="fw-bold">Dr. Mary Joe</h5>
+                    <p class="text-muted small">SURGEON</p>
+                    <a href="#" class="btn btn__book text-white w-75 mb-3 ms-auto me-auto">VIEW MORE</a>
+                    <div class="d-flex justify-content-center gap-4 fs-6 text-muted">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    </div>
+                </div>
+                </div>
                 </div>
             </div>
         </section>
 
-        <section class="emergency-section d-flex align-items-center">
+        <section class="emergency-section d-flex align-items-center" data-aos="fade-right">
             <div class="container">
                 <div class="row justify-content-end">
                 <div class="col-md-6">
@@ -353,13 +363,13 @@
             </div>
         </section>
 
-        <section class="py-4">
+        <section class="py-4" data-aos="zoom-in-up>
             <div class="container">
                 <div class="row text-center g-4 align-items-center">
                 
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos-delay="100">
                     <div class="d-flex align-items-center gap-2 justify-content-center">
-                    <img src="assets/img/price/counter1.png" alt="" class="counter-icon">
+                    <img src="assets/img/price/counter1.png" alt="counter1" class="counter-icon">
                     <div class="text-start">
                         <h5 class="fw-bold mb-0 fs-3 text-secondary">60+</h5>
                         <small class="text-muted">Expert Doctors</small>
@@ -367,9 +377,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos-delay="100">
                     <div class="d-flex align-items-center gap-2 justify-content-center">
-                    <img src="assets/img/price/counter2.png" alt="" class="counter-icon">
+                    <img src="assets/img/price/counter2.png" alt="counter2" class="counter-icon">
                     <div>
                         <h5 class="fw-bold mb-0 fs-3 text-secondary">1000+</h5>
                         <small class="text-muted">Happy Patients</small>
@@ -377,9 +387,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos-delay="100">
                     <div class="d-flex align-items-center gap-2 justify-content-center">
-                    <img src="assets/img/price/counter3.png" alt="" class="counter-icon">
+                    <img src="assets/img/price/counter3.png" alt="counter3" class="counter-icon">
                     <div class="text-start">
                         <h5 class="fw-bold mb-0 fs-3 text-secondary">150+</h5>
                         <small class="text-muted">Award Winner</small>
@@ -387,7 +397,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center" data-aos-delay="100">
                     <button class="btn btn__book px-4 rounded">BOOK NOW</button>
                 </div>
 
@@ -395,14 +405,14 @@
             </div>
         </section>
 
-        <footer class="footer-section text-white">
+        <footer class="footer-section text-white" data-aos="fade-up">
                     <div class="container py-5">
                     <div class="row gy-4">
 
                         <div class="col-md-4">
                         <div class="info-box bg__box text-white p-4 rounded h-100 w-75">
                             <h3 class="footer-logo mb-3">
-                            <img src="assets/img/footer/foot-logo.png" alt="">
+                            <img src="assets/img/footer/foot-logo.png" alt="foot logo">
                             </h3>
                             <p>Lorem ipsum dolor sit amet, consectetur<br/> adipisicing elit, sed do eius mod<br/> tempor incididunt ut labore et dolore<br/> magna aliqua. Ut enim ad minim.</p>
                             <p class="mt-4">
@@ -462,6 +472,13 @@
         </footer>
 
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+        </script>
 
     <!-- bootstrap js 5.3 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>

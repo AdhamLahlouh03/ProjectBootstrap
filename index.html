@@ -18,11 +18,11 @@
     <body>  
     
             <header class="header position-relative vh-200 " data-aos="fade-down">
-
+              
                 <nav class="navbar navbar-expand-lg w-100">
                     <div class="container">
                         <a class="navbar-brand" href="#">
-                            <img src="assets/img/logo/logo.png"/>
+                            <img src="assets/img/logo/logo.png" alt="Site logo"/>
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -30,14 +30,14 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
                             <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                             </li>
                             <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Department
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">cardiology </a></li>
+                                <li><a class="dropdown-item" href="./cardiology.html">cardiology </a></li>
                             </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -45,9 +45,9 @@
                                 Patients
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">service</a></li>
-                                <li><a class="dropdown-item" href="#">our doctors</a></li>
-                                <li><a class="dropdown-item" href="#">pricing</a></li>
+                                <li><a class="dropdown-item" href="./services.html">service</a></li>
+                                <li><a class="dropdown-item" href="./doctors.html">our doctors</a></li>
+                                <li><a class="dropdown-item" href="./price.html">pricing</a></li>
                             </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -55,22 +55,27 @@
                                 Blog
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">blog list</a></li>
-                                <li><a class="dropdown-item" href="#">blog grid</a></li>
-                                <li><a class="dropdown-item" href="#">blog details</a></li>
+                                <li><a class="dropdown-item" href="./blog_grid.html">blog grid</a></li>
                             </ul>
-                            </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="./about.html">About</a>
+                            </li>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Register</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./signIn.html">SignIn</a></li>
+                                <li><a class="dropdown-item" href="./signUp.html">SignUp</a></li>
+                            </ul>
                             </li>
                             <li class="nav-item border-start">
                                 <a class="nav-link" href="#">
-                                    <img src="assets/img/icons/search.svg" width="20" height="20"/>
+                                    <img src="assets/img/icons/search.svg" width="20" height="20" alt="search icon"/>
                                 </a>
                             </li>
                             <li class="nav-item border-end">
                                 <a class="nav-link" href="#">
-                                    <img src="assets/img/icons/cart.svg" width="20" height="20"/>
+                                    <img src="assets/img/icons/cart.svg" width="20" height="20" alt="cart icon"/>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -170,7 +175,7 @@
 
             <section class="about-section bg-white " data-aos="zoom-in">
                 <div class="container">
-                    <div class="custom-width">
+                    <div class="custom-width ms-auto me-auto">
                     <div class="row bg-light rounded shadow overflow-hidden">
                     
                     <div class="col-md-6 p-0 position-relative">
@@ -225,19 +230,19 @@
                 </div>
             </section>
 
-            <section class="services-section py-5 bg-body-tertiary mt-5" data-aos="fade-up">
+            <section class="services-section py-5 bg-body-tertiary mt-5 mb-0" data-aos="fade-up">
                 <div class="container text-center">
                     <p class="text-primary small fw-semibold">Our Services</p>
                     <h2 class="fw-bold mb-4">High Quality Services for You</h2>
                     <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active px-3">
                         <div class="row g-4 justify-content-center">
                             <div class="col-md-4">
                                 <div class="p-4 service-cards bg-service-green shadow-sm position-relative">
                                     <div class="position-relative mb-3 ms-auto">
                                     <img src="assets/img/services_section/services-bg2.png" width="120" class="end-0 start-40" alt="Main Icon">
-                                    <img src="assets/img/services_section/service-icon2.png" width="80" class="position-absolute top-40 start-40 translate-middle" style="left: 25px; top: 25px;" alt="Overlay Icon">
+                                    <img src="assets/img/services_section/service-icon2.png" class="Overlay-Icon position-absolute top-40 start-40 translate-middle"  alt="Overlay Icon">
                                     </div>
                                     <h5 class="fw-bold">Eye Care</h5>
                                     <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -248,7 +253,7 @@
                             <div class="p-4 service-cards bg-service-blue shadow-sm position-relative">
                                 <div class="position-relative mb-3">
                                     <img src="assets/img/services_section/services-bg3.png" width="76" alt="Main Icon">
-                                    <img src="assets/img/services_section/service-icon3.png" width="80" class="position-absolute top-40 start-40 translate-middle" style="left: 25px; top: 25px;" alt="Overlay Icon">
+                                    <img src="assets/img/services_section/service-icon3.png"  class="Overlay-Icon position-absolute top-40 start-40 translate-middle" alt="Overlay Icon">
                                     </div>
                                     <h5 class="fw-bold">Eye Care</h5>
                                     <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -259,7 +264,7 @@
                             <div class="p-4 service-cards bg-service-yellow shadow-sm position-relative">
                                 <div class="position-relative mb-3">
                                     <img src="assets/img/services_section/services-bg1.png" width="85" alt="Main Icon">
-                                    <img src="assets/img/services_section/service-icon1.png" width="80" class="position-absolute top-40 start-40 translate-middle" style="left: 25px; top: 25px;" alt="Overlay Icon">
+                                    <img src="assets/img/services_section/service-icon1.png" class="Overlay-Icon position-absolute top-40 start-40 translate-middle" alt="Overlay Icon">
                                     </div>
                                     <h5 class="fw-bold">Eye Care</h5>
                                     <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -270,11 +275,10 @@
                         </div>
                     </div>
                     </div>
-                    
                     </div>
             </section>
 
-            <section class="why-emergency-section bg-body-tertiary" data-aos="fade-right">
+            <section class="why-emergency-section bg-body-tertiary pt-0 mt-0" data-aos="fade-right">
                 <div class="container-fluid px-0">
                   <div class="row g-0">
 
@@ -354,8 +358,8 @@
                 </div>
             </section>
 
-            <section class="advanced-tech-section py-5" data-aos="zoom-in-up">
-              <div class="container">
+            <section class="py-5" data-aos="zoom-in-up">
+              <div class="custom-width ms-auto me-auto">
                 <div class="row align-items-center">
 
                   <div class="col-md-6 d-flex align-items-center justify-content-center position-relative mb-4 mb-md-0 text-center">
@@ -391,8 +395,9 @@
               </div>
             </section>
 
-            <section class="doctors-section py-5 text-center" data-aos="fade-up">
+            <section class="py-5 text-center" data-aos="fade-up">
               <div class="container">
+                <div class="custom-width ms-auto me-auto">
                 <p class="text-team fw-bold mb-2">---- Our Team ----</p>
                 <h2 class="fw-bold mb-5">Our Dedicated Doctors</h2>
 
@@ -401,7 +406,7 @@
                   <div class="col-12 col-sm-6 col-lg-3">
                     <div class="card doctor-card bg_green text-black border-0">
                       <div class="position-relative d-flex justify-content-center pt-4">
-                        <img src="assets/img/doctors/team1.jpg" class="doctor-img" alt="Doctor" />
+                        <img src="assets/img/doctors/team1.jpg" class="team-doctor" alt="Doctor" />
                       </div>
                       <div class="card-body">
                         <h5 class="fw-bold">Dr. Mary Joe</h5>
@@ -413,7 +418,7 @@
                   <div class="col-12 col-sm-6 col-lg-3">
                     <div class="card doctor-card text-black border-0">
                       <div class="position-relative d-flex justify-content-center pt-4">
-                        <img src="assets/img/doctors/team4.jpg" class="doctor-img" alt="Doctor" />
+                        <img src="assets/img/doctors/team4.jpg" class="team-doctor" alt="Doctor" />
                       </div>
                       <div class="card-body">
                         <h5 class="fw-bold">Dr. Hessy Hanna</h5>
@@ -425,7 +430,7 @@
                   <div class="col-12 col-sm-6 col-lg-3">
                     <div class="card doctor-card bg_blue text-black border-0">
                       <div class="position-relative d-flex justify-content-center pt-4">
-                        <img src="assets/img/doctors/team2.jpg" class="doctor-img" alt="Doctor" />
+                        <img src="assets/img/doctors/team2.jpg" class="team-doctor" alt="Doctor" />
                       </div>
                       <div class="card-body">
                         <h5 class="fw-bold">Dr. Thomas Jack</h5>
@@ -437,7 +442,7 @@
                   <div class="col-12 col-sm-6 col-lg-3">
                     <div class="card doctor-card text-black border-0">
                       <div class="position-relative d-flex justify-content-center pt-4">
-                        <img src="assets/img/doctors/team3.jpg" class="doctor-img" alt="Doctor" />
+                        <img src="assets/img/doctors/team3.jpg" class="team-doctor" alt="Doctor" />
                       </div>
                       <div class="card-body">
                         <h5 class="fw-bold">Dr. Mary Joe</h5>
@@ -445,7 +450,7 @@
                       </div>
                     </div>
                   </div>
-                  
+                </div>
                 </div>
               </div>
             </section>
@@ -469,7 +474,7 @@
               </div>
             </section>
 
-            <section class="testimonials-section py-5 vh-100" data-aos="flip-left">
+            <section class="testimonials-section py-5" data-aos="flip-left">
               <div class="container">
                 <div class="Testimonials__title">
                 <p class="text-primary fw-semibold mb-2">Testimonials</p>
@@ -522,7 +527,7 @@
 
                     <div class="blog-item d-flex align-items-center p-3 border-bottom">
                       <img src="assets/img/blog/blog-img1.jpg" alt="blog" class="blog-img me-3 ">
-                      <div class="flex-grow-1 text-start">
+                      <div class="flex-grow-1 text-start ">
                         <small class="meta-text d-block mb-1">January 12 2019 | By Admin</small>
                         <h6 class="mb-0 fw-semibold blog-title">Finding meaning in the intersection<br/> between marriage and medicine...</h6>
                       </div>
@@ -597,7 +602,7 @@
                     <div class="col-md-4">
                       <div class="info-box bg__box text-white p-4 rounded h-100 w-75">
                         <h3 class="footer-logo mb-3">
-                          <img src="assets/img/footer/foot-logo.png" alt="">
+                          <img src="assets/img/footer/foot-logo.png" alt="foot logo">
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur<br/> adipisicing elit, sed do eius mod<br/> tempor incididunt ut labore et dolore<br/> magna aliqua. Ut enim ad minim.</p>
                         <p class="mt-4">
@@ -660,7 +665,7 @@
       <script>
           AOS.init({
               duration: 1000,
-              once: true, // run once per element
+              once: true, 
           });
     </script>
 
